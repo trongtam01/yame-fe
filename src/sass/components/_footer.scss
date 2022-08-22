@@ -1,0 +1,142 @@
+.footer {
+    background-color: $main-bg;
+    padding: 30px;
+
+    &__header {
+        text-align: center;
+        color: $txt-main-color;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+
+        @include mobile {
+            font-size: 0.8rem;
+        }
+
+        h4 {
+            margin-top: 5px;
+        }
+
+        h4, div {
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 2.3rem;
+            line-height: 3rem;
+            margin-bottom: 5px;
+
+            @include mobile {
+                font-size: 1.3rem;
+            }
+        }
+
+        a {
+            color: $txt-hover;
+            transition: 0.3s;
+
+            &:hover {
+                color: $txt-hover;
+                border-bottom: 1px solid $txt-hover;
+            }
+
+            i {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__mid {
+        margin-top: 20px;
+
+        &__box {
+            color: $txt-main-color;
+        }
+
+        &__header {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+
+            @include tablet {
+                font-size: 1.4rem;
+            }
+
+            @include mobile {
+                font-size: 1rem;
+            }
+
+            i {
+                margin-right: 5px;
+            }
+
+            span {
+                text-transform: uppercase;
+            }
+        }
+
+        &__list {
+
+            &__item {
+                margin-bottom: 15px;
+                font-size: 1.2rem;
+
+                @include tablet {
+                    font-size: 0.8rem;
+                }
+                
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 10px;
+
+        &__box {
+            @include flex(center, space-between);
+
+            @include mobile {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+
+        &__left {
+            color: $txt-main-color;
+
+            h4 {
+                font-size: 1.5rem;
+                line-height: 3rem;
+                font-weight: 300;
+
+                 @include mobile {
+                    font-size: 0.8rem;
+                    line-height: 1.5rem;
+                }
+            }
+
+            p {
+                @include mobile {
+                    font-size: 0.6rem;
+                    line-height: 1rem;
+                }
+            }
+        }
+
+        &__right {
+            object-fit: cover;
+
+            img {
+                width: 100%;
+                max-width: 150px;
+                margin-top: 10px;
+
+                @include mobile {
+                    margin-top: 10px;
+                    max-width: none;
+                }
+            }
+        }
+    }
+}

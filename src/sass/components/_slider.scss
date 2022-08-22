@@ -1,0 +1,38 @@
+.slider {
+    margin-top: 30px;
+    padding: 5px;
+
+    .owl-carousel {
+        position: relative;
+    }
+
+    .owl-dots {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+    }
+
+    &__item {
+
+        &__top {
+            font-size: 2rem;
+            margin-bottom: 10px;
+
+            @include mobile {
+                font-size: 1rem;
+            }
+
+            &__link {
+                transition: 0.3s;
+
+                &:hover {
+                    color: $txt-hover;
+                }
+            }
+        }
+
+        &__bot {
+            @include flex(center, center);
+        }
+    }
+}
